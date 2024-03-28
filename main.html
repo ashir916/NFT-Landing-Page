@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <div>
+        <div class="container">
+            <img src="Logo.png" alt="logo">
+        </div>
+       <span class="title">LiquiDevil</span>
+       <span class="text">Unlocking the full potential of NFTs</span>
+       <button class="connect">Connect Wallet</button> 
+       
+    </div>
+    
+    <div class="wallet-options" style="margin: 0 auto;margin-top: 20px;">
+        <div class="connect-wallet">
+            <img src="Wallet Icon.svg" alt="Wallet" class="wallet-icon">
+            <h2 class="wallet-text">CONNECT WALLET</h2>
+            <img src="Close.svg" alt="close" class="close-button">
+        </div>
+
+
+        <div style="display: flex; flex-direction: column; width:400px;margin-bottom: 20px;">
+            <span class="choose">Choose a wallet to connect </span>
+        
+            <button class="options">
+                <img src="metamask-fox 1.svg" alt="FOX" style="margin-right: 7px;margin-left: 10px;">
+                <span class="button-text">METAMASK</span> 
+            </button>
+        </div>
+
+        <div style="display: flex; flex-direction: column; width:400px;">        
+            <button class="options">
+                <img src="Logo 2.svg" alt="logo-2" style="margin-right: 7px;margin-left: 10px;">
+                <span class="button-text">WALLET CONNECT</span> 
+            </button>
+        </div>
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const connectButton = document.querySelector('.connect');
+            const walletOptions = document.querySelector('.wallet-options');
+
+            connectButton.addEventListener('click', function() {
+                walletOptions.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
